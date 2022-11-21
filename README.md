@@ -10,13 +10,23 @@ The code consists of two main parts:
   1. **Preparing the training set and the neural network** - [Przygotowanie_sieci.ipynb](Przygotowanie_sieci.ipynb). This is a script created with jupyter notebook that prepares MIDI training set files, the network itself, trains the network and saves the output to be later loaded by the UI part of the system.
   2. **User interface** - this part allows to use previously prepared neural network and generate new melodies. Consists of a couple of files:
       - [main.py](main.py) - starting the app
-      - [GUI.py](GUI.py) - creating and managing the graphical user interface. The engine part is called in [generate()](GUI.py)
-
+      - [GUI.py](GUI.py) - creating and managing the graphical user interface. The engine part is called in [generate()](GUI.py#L154).
+      - [engine.py](engine.py) - heart of the app. Used for generating new melodies and saving them into LilyPond, PDF and MIDI files. The generating part happens [here - generate()](engine.py#L41) while the saving parts [here - save_file()](engine.py#L106)
+      - [lilypond_utilities.py](lilypond_utilities.py) - used mostly for translating music21 music language into LilyPond supported format.
 
 ## Running the code
 If you want to try out and run this code you will have to install [LilyPond](https://lilypond.org/). If you will encounter any problems, make sure the folder with LilyPond is added to PATH in your system enviornment variables.
 
-
+Other additional python dependencies are listed in [requirements file](other/requirements.txt):
+```
+customtkinter==4.6.3
+Keras==2.2.4
+music21==5.5.0
+numpy==1.16.1
+tensorflow==1.14.0
+```
+:bulb: <sub> I did encounter some problems using Python 3.10, so preferred versions are 3.9 and older. </sub>
 
 ## Examples
+I am in the mids of creating bigger training set database with 3/4 and 4/4 dictations, but in the meantime you can play with the app using 50 MIDI files in 3/4 signature in [MIDI_3-4](MIDI_3-4/). If you will train your own network and you want to use other model, you will need to update the path in two places in the [engine.py](engine.py) - [here](engine.py#L18) and [here](engine.py#L22). Otherwise you should be free to play with it just running the [main.py](main.py).
 
