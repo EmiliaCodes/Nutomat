@@ -136,11 +136,6 @@ class App(customtkinter.CTk):
         self.switch_if_midi.select()  # turn on as default
         self.switch_if_blank_staff.select()  # turn on as default
 
-        top = Toplevel(self)
-        top.geometry("750x250")
-        top.title("Child Window")
-        customtkinter.CTkLabel(top, text="Hello World!").place(x=150, y=80)
-
     def select_file(self):
         path = askdirectory()
         self.label_path.configure(text=path)
