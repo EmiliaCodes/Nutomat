@@ -33,3 +33,5 @@ tensorflow==1.14.0
 I am in the mids of creating bigger training set database with 3/4 and 4/4 dictations, but in the meantime you can play with the app using 50 MIDI files in 3/4 signature in [MIDI_3-4](MIDI_3-4/).
 
 If you will train your own network and you want to use other model, you will need to update the path in two places in the [engine.py](engine.py) - [here](engine.py#L18) and [here](engine.py#L22). Otherwise you should be free to play with it just running the [main.py](main.py).
+
+![Example screen](other/images/example_screen.png)
