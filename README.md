@@ -34,4 +34,7 @@ I am in the mids of creating bigger training set database with 3/4 and 4/4 dicta
 
 If you will train your own network and you want to use other model, you will need to update the path in two places in the [engine.py](engine.py) - [here](engine.py#L18) and [here](engine.py#L22). Otherwise you should be free to play with it just running the [main.py](main.py).
 
-![Example screen](other/images/example_screen.png)
+<img src="other/images/example_screen.png" width=50% height=50%>
+
+
+
