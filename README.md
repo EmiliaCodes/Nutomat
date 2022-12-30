@@ -35,7 +35,13 @@ The weights are trained on two training sets - one for 3/4 dictations (307 train
 If you will train your own network and you want to use other model, you will need to update the path in two places in the [engine.py](Nutomat-application/engine.py) - [here](Nutomat-application/engine.py#L27) and [here](Nutomat-application/engine.py#L30). Otherwise you should be free to play with it just running the [main.py](Nutomat-application/main.py).
 
 ### User screen
-<img src="other/pictures/user_screen.png" width=50% height=50%>
+<img src="other/pictures/user_screen_dark.png" width=50% height=50%>
+
+#### Example of a generated dictation
+<img src="other/pictures/example_dictation1.png" width=50% height=50%>
+
+#### Example of a generated dictation - empty with hints
+<img src="other/pictures/example_dictation2.png" width=50% height=50%>
 
 
 
