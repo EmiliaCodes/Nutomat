@@ -17,7 +17,7 @@ The code consists of two main parts:
       - [lilypond_utilities.py](lilypond_utilities.py) - used mostly for translating music21 music language into LilyPond supported format.
 
 ## Running the code
-If you want to try out and run this code you will have to install [LilyPond](https://lilypond.org/). If you will encounter any problems, make sure the folder with LilyPond is added to PATH in your system enviornment variables.
+If you want to try out and run this code you will have to download [LilyPond](https://lilypond.org/) and insert the whole folder inside the Nutomat project folder.
 
 Other additional python dependencies are listed in [requirements file](other/requirements.txt):
 ```
