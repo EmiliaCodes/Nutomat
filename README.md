@@ -30,7 +30,7 @@ tensorflow==2.11.0
 ```
 
 ## Executable version
-Executable version of the application is available at https://drive.google.com/drive/folders/18bPt_oD5GoS7UUWKG-HuOlzr1gWRSxzS?usp=sharing. There is instruction and demonstration included. If you encounter any problems feel free to contact me.
+Executable version of the application is available at [here](https://drive.google.com/drive/folders/18bPt_oD5GoS7UUWKG-HuOlzr1gWRSxzS?usp=sharing). There is instruction and demonstration included. If you encounter any problems feel free to contact me.
 
 ## Examples
 The weights are trained on two training sets - one for 3/4 dictations (307 training files) and second for 4/4 dictations (315 training files).
