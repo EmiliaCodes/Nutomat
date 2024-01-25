@@ -1,4 +1,9 @@
 #  Nutomat 🎶
+
+See most recent project-updates at [nutomat.com](https://www.nutomat.com/)
+
+---
+
 This project allows to prepare a neural network which generates new melodies. It uses MIDI files as the training set. Newly generated output can be saved in **PDF** and **MIDI** format. In this project I am using *music21* and *keras* libraries. *LilyPond* is used for creating PDF and MIDI files with generated output. 
 
 The app consists of a user interface that allows for easy interactions. It is possible to change the **length of dictation (in bars**), its **key signature**, the **tempo** of the generated MIDI file and the **path** where the files will be saved.
